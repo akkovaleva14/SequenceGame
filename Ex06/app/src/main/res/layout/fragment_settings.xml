@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Bindings go here -->
+    </data>
+
+    <android.widget.ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            tools:context=".ui.SettingsFragment">
+
+            <TextView
+                android:id="@+id/soundLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/sound"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/soundSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/colorBlueGray"
+                android:textOff="@string/on"
+                android:textOn="@string/off"
+                app:layout_constraintBottom_toBottomOf="@id/soundLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/soundLabel"
+                app:layout_constraintTop_toTopOf="@id/soundLabel"
+                app:showText="true"
+                app:thumbTint="@drawable/switch_track_selector"
+                app:trackTint="@color/colorBlueGray" />
+
+            <TextView
+                android:id="@+id/delayLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:text="@string/delay_between_sounds_ms"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/soundLabel" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderDelay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:stepSize="100"
+                android:valueFrom="100"
+                android:valueTo="1000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delayLabel"
+                app:thumbColor="@color/darkBlue"
+                app:trackColor="@color/colorPink" />
+
+            <TextView
+                android:id="@+id/highlightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:text="@string/button_highlight"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderDelay" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/highlightSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/colorBlueGray"
+                android:textOff="@string/on"
+                android:textOn="@string/off"
+                app:layout_constraintBottom_toBottomOf="@id/highlightLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/highlightLabel"
+                app:layout_constraintTop_toTopOf="@id/highlightLabel"
+                app:showText="true"
+                app:thumbTint="@color/colorBlue"
+                app:trackTint="@color/colorBlueGray" />
+
+            <TextView
+                android:id="@+id/soundTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:text="@string/sound_theme"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/highlightLabel" />
+
+            <Spinner
+                android:id="@+id/themeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:entries="@array/spinner_choices"
+                app:layout_constraintBottom_toBottomOf="@id/soundTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/soundTheme"
+                app:layout_constraintTop_toTopOf="@id/soundTheme" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.widget.ScrollView>
+</layout>

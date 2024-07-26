@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Ex06" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/lightPink</item>
+        <item name="colorPrimaryDark">@color/darkPink</item>
+        <item name="android:windowBackground">@color/lightBlue</item>
+        <item name="colorAccent">@color/darkBlue</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+    <style name="Theme.Ex06" parent="Base.Theme.Ex06" />
+</resources>

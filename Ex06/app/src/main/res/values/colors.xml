@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorButton1">#FF0000</color> <!-- Red -->
+    <color name="colorButton2">#00FF00</color> <!-- Green -->
+    <color name="colorButton3">#0000FF</color> <!-- Blue -->
+    <color name="colorButton4">#FFFF00</color> <!-- Yellow -->
+    <color name="colorButton1Pale">#FF9999</color> <!-- Pale Red -->
+    <color name="colorButton2Pale">#99FF99</color> <!-- Pale Green -->
+    <color name="colorButton3Pale">#9999FF</color> <!-- Pale Blue -->
+    <color name="colorButton4Pale">#FFFF99</color> <!-- Pale Yellow -->
+    <color name="colorHighlight">#FFFFFF</color> <!-- White for highlighting -->
+    <color name="colorBlue">#66ffed</color>
+    <color name="colorPink">#ff8da1</color>
+    <color name="colorBlueGray">#6a89a7</color>
+    <color name="lightPink">#EBC2E8</color>
+    <color name="darkPink">#BB115E</color>
+    <color name="lightBlue">#CEECFF</color>
+    <color name="darkBlue">#1599EB</color>
+</resources>
